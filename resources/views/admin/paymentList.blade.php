@@ -6,6 +6,7 @@
 @section('admin-title','Payment List')
 
 <div class="container card p-5">
+        <button id="printButton">PRINT PAYMENT LIST</button>
     <table class="table">
         <thead>
             <tr>
@@ -35,5 +36,11 @@
         </tbody>
     </table>
 </div>
+
+<script>
+            document.getElementById('printButton').addEventListener('click', function() {
+                window.print();
+            });
+        </script>
 
 @endsection
